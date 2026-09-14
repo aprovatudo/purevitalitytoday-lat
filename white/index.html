@@ -2,66 +2,76 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Liquido E Cia</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Century Gothic', Arial, sans-serif;background:#0f1117;color:#e0f7fa;line-height:1.6}
-header{background:#0f1117;border-bottom:1px solid #006070;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:10}
-.logo{font-family:'Century Gothic', 'Gill Sans', sans-serif;font-size:.95rem;font-weight:700;color:#00bcd4;letter-spacing:.04em}
+body{font-family:Arial, sans-serif;background:#fafafa;color:#444;line-height:1.6}
+header{background:#ffffff;border-bottom:3px solid #c0392b;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:10}
+header h1{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:900;color:#1a1a1a;letter-spacing:.02em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#607d8b;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
-nav a:hover{color:#00bcd4}
-.hero{padding:100px 48px 80px;max-width:900px}
-.hero-tag{display:inline-block;border:1px solid #006070;color:#00bcd4;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 16px;margin-bottom:32px}
-.hero h1{font-family:'Century Gothic', 'Gill Sans', sans-serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:24px;color:#e0f7fa}
-.hero h1 em{color:#00bcd4;font-style:normal}
-.hero-desc{font-size:1.1rem;color:#607d8b;max-width:600px;margin-bottom:40px;line-height:1.8}
-.hero-cta{display:inline-block;background:#00bcd4;color:#0f1117;padding:16px 40px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
-.hero-cta:hover{background:#006070;color:#e0f7fa}
-.divider{border:none;border-top:1px solid #006070;margin:0 48px}
-.section{padding:72px 48px;max-width:960px;margin:0 auto}
-.sec-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#00bcd4;margin-bottom:12px}
-.sec-h2{font-family:'Century Gothic', 'Gill Sans', sans-serif;font-size:1.8rem;font-weight:700;color:#e0f7fa;margin-bottom:48px}
-.srv-item{display:flex;gap:32px;align-items:flex-start;padding:28px 0;border-bottom:1px solid #006070}
-.srv-item:last-child{border-bottom:none}
-.srv-n{font-family:'Century Gothic', 'Gill Sans', sans-serif;font-size:3rem;font-weight:700;color:#006070;min-width:72px;line-height:1;letter-spacing:-.02em}
-.srv-item h4{font-family:'Century Gothic', 'Gill Sans', sans-serif;font-size:1.05rem;font-weight:700;color:#00bcd4;margin-bottom:8px}
-.srv-item p{font-size:.9rem;color:#607d8b;line-height:1.7}
-.sobre-sec{background:#161b22;padding:72px 48px;margin-top:0}
-.sobre-inner{max-width:900px;margin:0 auto}
-.sobre-inner p{color:#607d8b;line-height:1.9;margin-bottom:16px;font-size:.98rem}
-.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin-top:48px;border:1px solid #006070}
-.meta-cell{padding:20px 24px;border-right:1px solid #006070}
-.meta-cell:last-child{border-right:none}
-.meta-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#00bcd4;margin-bottom:4px}
-.meta-value{font-size:.92rem;color:#e0f7fa;font-weight:600}
-.contato-sec{padding:72px 48px;max-width:960px;margin:0 auto}
-.contato-inner{border-left:2px solid #00bcd4;padding-left:32px;max-width:500px}
-.contato-inner p{color:#607d8b;margin-bottom:12px;font-size:.95rem;line-height:1.7}
-.contato-inner a{color:#00bcd4;text-decoration:none}
-footer{background:#161b22;border-top:1px solid #006070;padding:24px 48px;display:flex;justify-content:space-between;font-size:.78rem;color:#37474f}
-@media(max-width:600px){.hero{padding:60px 24px}.section,.contato-sec{padding:48px 24px}nav{display:none}.srv-n{font-size:2rem;min-width:48px}}
+nav a{color:#c0392b;text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+nav a:hover{color:#922b21}
+.hero{display:grid;grid-template-columns:1fr 380px;min-height:480px}
+.hero-left{background:#fafafa;padding:64px 40px 64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero-eyebrow{font-size:.75rem;letter-spacing:.18em;color:#c0392b;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.hero-left h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2.6rem;font-weight:900;color:#1a1a1a;line-height:1.15;margin-bottom:20px}
+.hero-left h2 em{color:#c0392b;font-style:normal}
+.hero-left p{color:#444;font-size:1rem;max-width:480px;margin-bottom:32px;line-height:1.75}
+.hero-cta{display:inline-block;background:#c0392b;color:white;padding:14px 32px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;transition:background .2s}
+.hero-cta:hover{background:#922b21}
+.hero-right{background:#c0392b;color:#ffffff;padding:48px 36px;display:flex;flex-direction:column;justify-content:center;gap:24px}
+.hero-right h3{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;opacity:.7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.info-item{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:16px}
+.info-item:last-child{border-bottom:none;padding-bottom:0}
+.info-label{font-size:.75rem;opacity:.65;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
+.info-value{font-size:1rem;font-weight:600}
+.section{max-width:960px;margin:72px auto;padding:0 40px}
+.section-label{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#c0392b;font-weight:700;margin-bottom:12px}
+.section h2{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1.7rem;font-weight:900;color:#1a1a1a;margin-bottom:40px}
+.srv-row{display:flex;gap:24px;align-items:flex-start;padding:24px 0;border-bottom:1px solid #fadbd8}
+.srv-row:last-child{border-bottom:none}
+.srv-num{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:2rem;font-weight:900;color:#c0392b;opacity:.3;min-width:56px;line-height:1}
+.srv-body h4{font-family:'Arial Black', 'Helvetica Neue', sans-serif;font-size:1rem;font-weight:700;color:#1a1a1a;margin-bottom:6px}
+.srv-body p{font-size:.9rem;color:#444;line-height:1.65}
+.sobre-grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
+.sobre-text p{color:#444;line-height:1.85;margin-bottom:16px}
+.stats-panel{background:#fadbd8;border-left:4px solid #c0392b;padding:28px}
+.stats-panel p{font-size:.88rem;color:#444;margin-bottom:10px;line-height:1.5}
+.stats-panel p strong{color:#922b21;display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+.contato-box{background:#fadbd8;border-left:4px solid #c0392b;padding:32px;max-width:560px}
+.contato-box p{font-size:.95rem;color:#444;margin-bottom:12px;line-height:1.6}
+.contato-box a{color:#c0392b;text-decoration:none;font-weight:600}
+footer{background:#1a1a1a;color:#888;padding:28px 40px;display:flex;justify-content:space-between;align-items:center;font-size:.8rem;margin-top:80px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero-right{display:none}.sobre-grid{grid-template-columns:1fr}nav{display:none}}
 </style></head><body>
-<header><span class="logo">Liquido E Cia</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
+<header><h1>Liquido E Cia</h1><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <div class="hero-tag">Supermercado · Qualidade · Proximidade</div>
-  <h1>Sua <em>melhor compra</em> está aqui em <em>Brasília</em></h1>
-  <p class="hero-desc">A Líquido E Cia é um supermercado completo que oferece produtos alimentícios e mercadorias gerais com qualidade e preço justo para toda sua família. Atendemos Brasília com variedade, comodidade e atendimento que você merece.</p>
-  <a href="#contato" class="hero-cta">Iniciar conversa</a>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Supermercado · Variedade · Qualidade</p>
+    <h2>Seu <em>supermercado</em> de <em>confiança</em> em Brasília</h2>
+    <p>A Liquido E Cia é um supermercado completo que oferece variedade de produtos alimentícios e mercadorias gerais para atender toda sua família. Localizado em Brasília, somos seu parceiro na hora das compras do dia a dia.</p>
+    <a href="#contato" class="hero-cta">Solicitar atendimento</a>
+  </div>
+  <div class="hero-right">
+    <h3>Liquido E Cia</h3>
+    <div class="info-item"><div class="info-label">Fundação</div><div class="info-value">2009</div></div>
+    <div class="info-item"><div class="info-label">Localização</div><div class="info-value">Brasilia — DF</div></div>
+    
+    <div class="info-item"><div class="info-label">CNPJ</div><div class="info-value">10.798.388/0001-71</div></div>
+  </div>
 </div>
-<hr class="divider">
-<div id="servicos" class="section"><p class="sec-label">Soluções</p><h2 class="sec-h2">Como atuamos</h2><div class="srv-item"><span class="srv-n">01</span><div><h4>Produtos Alimentícios Frescos</h4><p>Seleção diária de alimentos frescos, frutas, verduras e bebidas para sua mesa.</p></div></div><div class="srv-item"><span class="srv-n">02</span><div><h4>Mercadorias em Geral</h4><p>Artigos de limpeza, higiene pessoal e produtos essenciais para seu lar.</p></div></div><div class="srv-item"><span class="srv-n">03</span><div><h4>Compras Práticas e Rápidas</h4><p>Checkout ágil e organizado para sua conveniência no dia a dia.</p></div></div><div class="srv-item"><span class="srv-n">04</span><div><h4>Atendimento Próximo</h4><p>Equipe preparada para orientar e garantir sua melhor experiência de compra.</p></div></div></div>
-<div id="sobre" class="sobre-sec"><div class="sobre-inner">
-  <p class="sec-label">Sobre a empresa</p><h2 class="sec-h2">Nossa organização</h2>
-  <p>A Líquido E Cia é um supermercado tradicional em Brasília, dedicado a fornecer produtos de qualidade com preços competitivos. Desde nossa fundação, nos comprometemos em oferecer uma experiência de compra satisfatória, com variedade de produtos alimentícios e mercadorias gerais para atender todas as necessidades das famílias brasilienses.</p><p>O diferencial da Líquido E Cia está no compromisso com a qualidade dos produtos, nos preços justos e no atendimento atencioso de nossa equipe. Trabalhamos continuamente para manter nossas prateleiras bem abastecidas e oferecer a melhor seleção de alimentos frescos e produtos essenciais da região.</p>
-  <div class="meta-grid">
-    <div class="meta-cell"><div class="meta-label">Razão Social</div><div class="meta-value">Liquido Comercial De Alimentos Ltda</div></div>
-    <div class="meta-cell"><div class="meta-label">CNPJ</div><div class="meta-value">10.798.388/0001-71</div></div>
-    <div class="meta-cell"><div class="meta-label">Estado</div><div class="meta-value">Distrito Federal</div></div>
-    <div class="meta-cell"><div class="meta-label">Fundação</div><div class="meta-value">2009</div></div>
+<div id="servicos" class="section"><p class="section-label">Soluções</p><h2>O que entregamos</h2><div class="srv-row"><div class="srv-num">01</div><div class="srv-body"><h4>Produtos Alimentícios</h4><p>Ampla seleção de alimentos frescos, bebidas e itens de consumo diário com qualidade garantida.</p></div></div><div class="srv-row"><div class="srv-num">02</div><div class="srv-body"><h4>Mercadorias em Geral</h4><p>Produtos de higiene, limpeza, artigos para casa e outras necessidades do seu dia a dia em um único lugar.</p></div></div><div class="srv-row"><div class="srv-num">03</div><div class="srv-body"><h4>Compras Convenientes</h4><p>Atendimento ágil e prático para facilitar suas compras com segurança e conforto.</p></div></div><div class="srv-row"><div class="srv-num">04</div><div class="srv-body"><h4>Preços Competitivos</h4><p>Oferecemos as melhores opções de preço para que você economize mantendo qualidade.</p></div></div></div>
+<div id="sobre" class="section"><p class="section-label">Sobre a empresa</p><h2>Sobre nós</h2>
+<div class="sobre-grid">
+  <div class="sobre-text"><p>A Liquido E Cia é um supermercado tradicional de Brasília que há anos serve as famílias brasilienses com produtos alimentícios de qualidade e uma grande variedade de mercadorias em geral. Nosso compromisso é ser referência em atendimento, preço justo e disponibilidade de produtos.</p><p>Diferenciamo-nos por oferecer uma experiência de compra prática, com produtos selecionados e preços competitivos que cabem no seu orçamento. Estamos sempre inovando para melhor atender você e sua família no coração de Brasília.</p></div>
+  <div class="stats-panel">
+    <p><strong>Razão Social</strong>Liquido Comercial De Alimentos Ltda</p>
+    <p><strong>CNPJ</strong>10.798.388/0001-71</p>
+    <p><strong>Estado</strong>Distrito Federal</p>
+    <p><strong>Situação</strong>✅ Ativa</p>
   </div>
 </div></div>
-<div id="contato" class="contato-sec"><p class="sec-label">Fale conosco</p><h2 class="sec-h2">Entre em contato</h2>
-<div class="contato-inner">
-  <p>Respondemos em até 24 horas úteis.</p>
+<div id="contato" class="section"><p class="section-label">Fale conosco</p><h2>Entre em contato</h2>
+<div class="contato-box">
+  <p>Nosso time responde rapidamente. Envie sua mensagem.</p>
   <p><strong>Telefone:</strong> <a href="tel:+556135629800">(61) 3562-9800</a></p><p><strong>Endereço:</strong> R. Qnl 12 Bloco E Lote, 15, Taguatinga Norte, Brasilia — DF, CEP 72115-120</p>
 </div></div>
-<footer><span>Liquido E Cia · CNPJ 10.798.388/0001-71</span><span>© 2009–2026 Liquido Comercial De Alimentos Ltda</span></footer>
+<footer><span>Liquido E Cia — CNPJ 10.798.388/0001-71</span><span>© 2009–2026 Liquido Comercial De Alimentos Ltda</span></footer>
 </body></html>
